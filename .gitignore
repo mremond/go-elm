@@ -25,3 +25,4 @@ _testmain.go
 
 static/js/*.js
 elm-stuff/
+node-modules/
