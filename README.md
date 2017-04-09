@@ -8,8 +8,16 @@ Install Elm and Go.
 
 ## Compiling
 
+First, install the required Elm packages:
+
 ```
-elm-make.exe .\elm-src\App.elm --output static/js/app.js
+elm-package install
+```
+
+Then, you can build your application and the Go server that is going to serve your Elm content.
+
+```
+elm-make ./elm-src/App.elm --output static/js/app.js
 go build server/server.go
 ```
 
